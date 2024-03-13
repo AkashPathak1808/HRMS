@@ -24,6 +24,7 @@ const routes: Routes = [
   {path: 'hr/settings', component: SettingComponent},
   {path: 'hr/tasks', component: TaskComponent},
 
+
   
 ];
 
