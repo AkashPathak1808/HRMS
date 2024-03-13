@@ -1,35 +1,48 @@
 <div class="maincomponent">
     <div class="row">
-        <div class="col-3">
-            <div class="dashboard">
-                <a routerLink="/hr">Dashboard</a>
+        <div class="col-3 sidenav">
+            <div class="rwllogo">
+                <img [src]="railworldLogo" alt="">
             </div>
-            <div class="employee">
-                <a routerLink="/hr/employees">Employees</a>
+
+            <div class="dashboard common">
+               <a routerLink="/hr" >  <img [src]="dashboard" alt=""> Dashboard</a>
             </div>
-            <div class="clients">
-                <a routerLink="/hr/clients">Clients</a>
+
+            <div class="employee common">
+                <a routerLink="/hr/employees"><img [src]="allEmp" alt=""> Employees</a>
             </div>
-            <div class="projects">
-                <a routerLink="/hr/projects">Projects</a>
+
+            <div class="clients common">
+                <a routerLink="/hr/clients"><img [src]="clients" alt=""> Clients</a>
             </div>
-            <div class="task">
-                <a routerLink="/hr/tasks">Tasks</a>
+
+            <div class="projects common">
+                <a routerLink="/hr/projects"> <img [src]="projects" alt=""> Projects</a>
             </div>
-            <div class="attendance">
-                <a routerLink="/hr/attendance">Attendance</a>
+
+            <div class="task common">
+                <a routerLink="/hr/tasks"><img [src]="tasks" alt=""> Tasks</a>
             </div>
-            <div class="leave">
-                <a routerLink="/hr/leaves">Leave</a>
+
+            <div class="attendance common">
+                <a routerLink="/hr/attendance"><img [src]="attendence" alt=""> Attendance</a>
             </div>
-            <div class="jobs">
-                <a routerLink="/hr/jobs">Jobs</a>
+
+            <div class="leave common">
+                <a routerLink="/hr/leaves"><img [src]="leaves" alt=""> Leave</a>
             </div>
-            <div class="management">
-                <a routerLink="/hr/managements">Management</a>
+
+            <div class="jobs common">
+                <a routerLink="/hr/jobs"><img [src]="jobs" alt=""> Jobs</a>
             </div>
-            <div class="setting">
-                <a routerLink="/hr/settings">Settings</a>
+
+            <div class="management common">
+                <a routerLink="/hr/managements"><img [src]="mgmt" alt=""> Management</a>
+            </div>
+
+            <div class="setting common">
+                <a routerLink="/hr/settings"> <img [src]="settings" alt=""> Settings</a>
             </div>
         </div>
         <div class="col-9">

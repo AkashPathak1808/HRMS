@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+.maincomponent {
+  overflow: hidden;
+}
+
+.sidenav {
+  width: max-content;
+  height:100vh;
+  border-radius: 20px;
+  background: rgba(162, 161, 168, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2%;
+}
+
+.common a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  color: #16151c;
+  font-family: "Lexend";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.common {
+  padding: 5%;
+}
+
+.common:hover {
+  border-left: solid #7152f3 3px;
+  color: #7152f3;
+  border-radius: 0px 10px 10px 0px;
+  background: rgba(113, 82, 243, 0.05);
+}
+
+.common a:hover{
+  color: #7152f3;
+}
