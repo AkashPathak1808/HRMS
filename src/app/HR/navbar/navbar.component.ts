@@ -10,9 +10,8 @@ export class NavbarComponent {
   allEmp = 'assets/DashboardImg/allEmp.svg';
   clients = 'assets/DashboardImg/clients.svg';
   attendence = 'assets/DashboardImg/attendence.svg';
-  projects = 'assets/DashboardImg/pro.svg';
   jobs = 'assets/DashboardImg/jobs.svg';
-  tasks = 'assets/DashboardImg/tasks.svg';
+  projects = 'assets/DashboardImg/tasks.svg';
   candidate = 'assets/DashboardImg/candidate.svg';
   payroll = 'assets/DashboardImg/payroll.svg';
   mgmt = 'assets/DashboardImg/mgmt.svg';

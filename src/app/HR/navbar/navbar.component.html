@@ -5,48 +5,45 @@
                 <img [src]="railworldLogo" alt="">
             </div>
 
-            <div class="dashboard common">
-               <a routerLink="/hr" > <img [src]="dashboard" alt="">  Dashboard</a>
+            <div class="dashboard common" routerLink="/hr">
+                <a> <img [src]="dashboard" alt=""> Dashboard</a>
             </div>
 
-            <div class="employee common">
-                <a routerLink="/hr/employees"><img [src]="allEmp" alt=""> Employees</a>
+            <div class="employee common"  routerLink="/hr/employees">
+                <a ><img [src]="allEmp" alt=""> Employees</a>
             </div>
 
-            <div class="clients common">
-                <a routerLink="/hr/clients"><img [src]="clients" alt=""> Clients</a>
+            <div class="clients common" routerLink="/hr/clients"> 
+                <a ><img [src]="clients" alt=""> Clients</a>
             </div>
 
-            <div class="projects common">
-                <a routerLink="/hr/projects"> <img [src]="projects" alt=""> Projects</a>
+            <div class="projects common" routerLink="/hr/projects">
+                <a > <img [src]="projects" alt=""> Projects</a>
             </div>
 
-            <div class="task common">
-                <a routerLink="/hr/tasks"><img [src]="tasks" alt=""> Tasks</a>
+
+            <div class="attendance common" routerLink="/hr/attendance">
+                <a ><img [src]="attendence" alt=""> Attendance</a>
             </div>
 
-            <div class="attendance common">
-                <a routerLink="/hr/attendance"><img [src]="attendence" alt=""> Attendance</a>
+            <div class="leave common" routerLink="/hr/leaves">
+                <a ><img [src]="leaves" alt=""> Leave</a>
             </div>
 
-            <div class="leave common">
-                <a routerLink="/hr/leaves"><img [src]="leaves" alt=""> Leave</a>
+            <div class="jobs common" routerLink="/hr/jobs">
+                <a ><img [src]="jobs" alt=""> Jobs</a>
             </div>
 
-            <div class="jobs common">
-                <a routerLink="/hr/jobs"><img [src]="jobs" alt=""> Jobs</a>
+            <div class="management common" routerLink="/hr/managements">
+                <a ><img [src]="mgmt" alt=""> Management</a>
             </div>
 
-            <div class="management common">
-                <a routerLink="/hr/managements"><img [src]="mgmt" alt=""> Management</a>
+            <div class="setting common" routerLink="/hr/settings">
+                <a > <i class="fa fa-gear"></i> Settings</a>
             </div>
 
-            <div class="setting common">
-                <a routerLink="/hr/settings"> <img [src]="settings" alt=""> Settings</a>
-            </div>
-
-            <div class="setting common">
-                <a routerLink="/hr/logout"> <img [src]="logout" alt=""> Log Out</a>
+            <div class="setting common"  routerLink="/hr/logout">
+                <a > <img [src]="logout" alt=""> Log Out</a>
             </div>
 
         </div>
