@@ -6,12 +6,12 @@ import { ClientComponent } from './HR/client/client.component';
 import { ProjectComponent } from './HR/project/project.component';
 import { TaskComponent } from './HR/task/task.component';
 import { AttendanceComponent } from './HR/attendance/attendance.component';
-import { LeaveComponent } from './HR/leave/leave.component';
 import { JobsComponent } from './HR/jobs/jobs.component';
 import { ManagementComponent } from './HR/management/management.component';
 import { SettingComponent } from './HR/settings/setting/setting.component';
 import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
 import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
+import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
 
 const routes: Routes = [
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'hr/clients', component: ClientComponent},
   {path: 'hr/employees', component: EmployeeComponent},
   {path: 'hr/jobs', component: JobsComponent},
-  {path: 'hr/leaves', component: LeaveComponent},
+  {path: 'hr/leaves', component: LeaveApprovedComponent},
   {path: 'hr/managements', component: ManagementComponent},
   {path: 'hr/projects', component: ProjectComponent},
   {path: 'hr/settings',component: SettingsNavbarComponent, 
