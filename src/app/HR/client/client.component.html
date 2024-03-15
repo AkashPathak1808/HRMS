@@ -1,1 +1,59 @@
-<p>client works!</p>
+<!-- Part-1 -->
+<div id="container-card">Projects</div>
+
+<div class="search-container">
+  <input type="text" placeholder="Search..." />
+  <button onclick="search()">
+    <div class="search_icon"><i class="fa fa-search"></i></div>
+  </button>
+
+  <div class="bell"><i class="fa fa-bell fa-2xl"></i></div>
+
+  <div class="rectangle-box">
+    <img class="me" [src]="person" alt="" />
+    <h1 class="name">Shubham Pandey</h1>
+    <p id="namep">HR Manager</p>
+  </div>
+  <button onclick="search()">
+    <i class="fa fa-angle-down fa-l"></i>
+  </button>
+</div>
+
+<!-- Part-2 -->
+<div class="card-box">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <img [src]="img1" alt="Logo 1" class="logo" />
+
+      <div class="col">
+        <p>Members <br> <span id="activeMembers">0</span></p>
+        <p><span id="activeMembersThisMonth"> </span> % this month</p>
+      </div>
+
+      <img [src]="img1" alt="Logo 1" class="logo" />
+
+      <div class="col">
+        <p>Members <br> <span id="activeMembers">0</span></p>
+        <p><span id="activeMembersThisMonth"> </span> % this month</p>
+      </div>
+
+      <img [src]="img1" alt="Logo 1" class="logo" />
+
+      <div class="col">
+        <p>
+          Active Now <br />
+          <span id="activeMembers">0</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------Table part------------------ -->
+
+  <div class="container-table">
+    <div class="container-card">
+      <h2 class="head">All Customers</h2>
+      <h5 class="active-customers">Active Members</h5>
+    </div>
+  </div>
+</div>

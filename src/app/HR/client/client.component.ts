@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ClientComponent {
 
+  img1="assets/client-page/TotalMembers.svg";
+  img2="assets/client-page/Members.svg";
+  img3="assets/client-page/ActiveMember.svg";
+  person ="assets/client-page/personsimg.svg";
+
 }
