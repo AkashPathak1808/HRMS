@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaveComponent } from './leave.component';
+import { PayrollComponent } from './payroll.component';
 
-describe('LeaveComponent', () => {
-  let component: LeaveComponent;
-  let fixture: ComponentFixture<LeaveComponent>;
+describe('PayrollComponent', () => {
+  let component: PayrollComponent;
+  let fixture: ComponentFixture<PayrollComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LeaveComponent]
+      declarations: [PayrollComponent]
     });
-    fixture = TestBed.createComponent(LeaveComponent);
+    fixture = TestBed.createComponent(PayrollComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
