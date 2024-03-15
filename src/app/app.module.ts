@@ -22,6 +22,8 @@ import { EmpleaveComponent } from './Employee/empleave/empleave.component';
 import { EmpsettingsComponent } from './Employee/empsettings/empsettings.component';
 import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
 import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule,} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
