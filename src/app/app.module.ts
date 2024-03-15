@@ -20,6 +20,9 @@ import { EmppayslipComponent } from './Employee/emppayslip/emppayslip.component'
 import { EmpattendanceComponent } from './Employee/empattendance/empattendance.component';
 import { EmpleaveComponent } from './Employee/empleave/empleave.component';
 import { EmpsettingsComponent } from './Employee/empsettings/empsettings.component';
+import { CandidatesComponent } from './HR/candidates/candidates.component';
+import { PayrollComponent } from './HR/payroll/payroll.component';
+import { HolidaysComponent } from './HR/holidays/holidays.component';
 import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
 import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
 import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
@@ -47,6 +50,9 @@ import {MatIconModule,} from '@angular/material/icon';
     EmpattendanceComponent,
     EmpleaveComponent,
     EmpsettingsComponent,
+    CandidatesComponent,
+    PayrollComponent,
+    HolidaysComponent,
     SettingSecurityComponent,
     SettingsNavbarComponent,
     LeaveApprovedComponent,

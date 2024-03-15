@@ -12,6 +12,9 @@ import { SettingComponent } from './HR/settings/setting/setting.component';
 import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
 import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
 import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
+import { CandidatesComponent } from './HR/candidates/candidates.component';
+import { PayrollComponent } from './HR/payroll/payroll.component';
+import { HolidaysComponent } from './HR/holidays/holidays.component';
 
 const routes: Routes = [
 
@@ -28,9 +31,9 @@ const routes: Routes = [
     {path: '', component: SettingComponent},
     {path: "security", component: SettingSecurityComponent}]},
   {path: 'hr/tasks', component: TaskComponent},
-
-
-  
+  {path: 'hr/candidates', component: CandidatesComponent},
+  {path: 'hr/payrolls', component: PayrollComponent},
+  {path: 'hr/holidays', component: HolidaysComponent},  
 ];
 
 @NgModule({
