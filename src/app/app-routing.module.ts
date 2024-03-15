@@ -9,7 +9,9 @@ import { AttendanceComponent } from './HR/attendance/attendance.component';
 import { LeaveComponent } from './HR/leave/leave.component';
 import { JobsComponent } from './HR/jobs/jobs.component';
 import { ManagementComponent } from './HR/management/management.component';
-import { SettingComponent } from './HR/setting/setting.component';
+import { SettingComponent } from './HR/settings/setting/setting.component';
+import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
+import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
 
 const routes: Routes = [
 
@@ -21,7 +23,10 @@ const routes: Routes = [
   {path: 'hr/leaves', component: LeaveComponent},
   {path: 'hr/managements', component: ManagementComponent},
   {path: 'hr/projects', component: ProjectComponent},
-  {path: 'hr/settings', component: SettingComponent},
+  {path: 'hr/settings',component: SettingsNavbarComponent, 
+   children : [
+    {path: '', component: SettingComponent},
+    {path: "security", component: SettingSecurityComponent}]},
   {path: 'hr/tasks', component: TaskComponent},
 
 

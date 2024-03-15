@@ -12,7 +12,7 @@ import { AttendanceComponent } from './HR/attendance/attendance.component';
 import { LeaveComponent } from './HR/leave/leave.component';
 import { JobsComponent } from './HR/jobs/jobs.component';
 import { ManagementComponent } from './HR/management/management.component';
-import { SettingComponent } from './HR/setting/setting.component';
+import { SettingComponent } from './HR/settings/setting/setting.component';
 import { NavbarComponent } from './HR/navbar/navbar.component';
 import { EmpdashboardComponent } from './Employee/empdashboard/empdashboard.component';
 import { EmpprofileComponent } from './Employee/empprofile/empprofile.component';
@@ -21,6 +21,8 @@ import { EmppayslipComponent } from './Employee/emppayslip/emppayslip.component'
 import { EmpattendanceComponent } from './Employee/empattendance/empattendance.component';
 import { EmpleaveComponent } from './Employee/empleave/empleave.component';
 import { EmpsettingsComponent } from './Employee/empsettings/empsettings.component';
+import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
+import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { EmpsettingsComponent } from './Employee/empsettings/empsettings.compone
     EmppayslipComponent,
     EmpattendanceComponent,
     EmpleaveComponent,
-    EmpsettingsComponent
+    EmpsettingsComponent,
+    SettingSecurityComponent,
+    SettingsNavbarComponent
   ],
   imports: [
     BrowserModule,
