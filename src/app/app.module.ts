@@ -9,10 +9,9 @@ import { ClientComponent } from './HR/client/client.component';
 import { ProjectComponent } from './HR/project/project.component';
 import { TaskComponent } from './HR/task/task.component';
 import { AttendanceComponent } from './HR/attendance/attendance.component';
-import { LeaveComponent } from './HR/leave/leave.component';
 import { JobsComponent } from './HR/jobs/jobs.component';
 import { ManagementComponent } from './HR/management/management.component';
-import { SettingComponent } from './HR/setting/setting.component';
+import { SettingComponent } from './HR/settings/setting/setting.component';
 import { NavbarComponent } from './HR/navbar/navbar.component';
 import { EmpdashboardComponent } from './Employee/empdashboard/empdashboard.component';
 import { EmpprofileComponent } from './Employee/empprofile/empprofile.component';
@@ -24,6 +23,12 @@ import { EmpsettingsComponent } from './Employee/empsettings/empsettings.compone
 import { CandidatesComponent } from './HR/candidates/candidates.component';
 import { PayrollComponent } from './HR/payroll/payroll.component';
 import { HolidaysComponent } from './HR/holidays/holidays.component';
+import { SettingSecurityComponent } from './HR/settings/setting-security/setting-security.component';
+import { SettingsNavbarComponent } from './HR/settings/settings-navbar/settings-navbar.component';
+import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
+import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule,} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,6 @@ import { HolidaysComponent } from './HR/holidays/holidays.component';
     ProjectComponent,
     TaskComponent,
     AttendanceComponent,
-    LeaveComponent,
     JobsComponent,
     ManagementComponent,
     SettingComponent,
@@ -48,11 +52,17 @@ import { HolidaysComponent } from './HR/holidays/holidays.component';
     EmpsettingsComponent,
     CandidatesComponent,
     PayrollComponent,
-    HolidaysComponent
+    HolidaysComponent,
+    SettingSecurityComponent,
+    SettingsNavbarComponent,
+    LeaveApprovedComponent,
+    LeavePendingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
