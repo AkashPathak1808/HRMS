@@ -9,7 +9,6 @@ import { ClientComponent } from './HR/client/client.component';
 import { ProjectComponent } from './HR/project/project.component';
 import { TaskComponent } from './HR/task/task.component';
 import { AttendanceComponent } from './HR/attendance/attendance.component';
-import { LeaveComponent } from './HR/leave/leave.component';
 import { JobsComponent } from './HR/jobs/jobs.component';
 import { ManagementComponent } from './HR/management/management.component';
 import { SettingComponent } from './HR/setting/setting.component';
@@ -21,6 +20,8 @@ import { EmppayslipComponent } from './Employee/emppayslip/emppayslip.component'
 import { EmpattendanceComponent } from './Employee/empattendance/empattendance.component';
 import { EmpleaveComponent } from './Employee/empleave/empleave.component';
 import { EmpsettingsComponent } from './Employee/empsettings/empsettings.component';
+import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approved.component';
+import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,6 @@ import { EmpsettingsComponent } from './Employee/empsettings/empsettings.compone
     ProjectComponent,
     TaskComponent,
     AttendanceComponent,
-    LeaveComponent,
     JobsComponent,
     ManagementComponent,
     SettingComponent,
@@ -42,7 +42,9 @@ import { EmpsettingsComponent } from './Employee/empsettings/empsettings.compone
     EmppayslipComponent,
     EmpattendanceComponent,
     EmpleaveComponent,
-    EmpsettingsComponent
+    EmpsettingsComponent,
+    LeaveApprovedComponent,
+    LeavePendingComponent
   ],
   imports: [
     BrowserModule,
