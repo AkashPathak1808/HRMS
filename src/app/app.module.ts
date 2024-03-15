@@ -21,6 +21,9 @@ import { EmppayslipComponent } from './Employee/emppayslip/emppayslip.component'
 import { EmpattendanceComponent } from './Employee/empattendance/empattendance.component';
 import { EmpleaveComponent } from './Employee/empleave/empleave.component';
 import { EmpsettingsComponent } from './Employee/empsettings/empsettings.component';
+import { CandidatesComponent } from './HR/candidates/candidates.component';
+import { PayrollComponent } from './HR/payroll/payroll.component';
+import { HolidaysComponent } from './HR/holidays/holidays.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { EmpsettingsComponent } from './Employee/empsettings/empsettings.compone
     EmppayslipComponent,
     EmpattendanceComponent,
     EmpleaveComponent,
-    EmpsettingsComponent
+    EmpsettingsComponent,
+    CandidatesComponent,
+    PayrollComponent,
+    HolidaysComponent
   ],
   imports: [
     BrowserModule,
