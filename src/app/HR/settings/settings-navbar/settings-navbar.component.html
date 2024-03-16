@@ -1,11 +1,48 @@
+<div class="container">
+  <div class="logo">Settings</div>
+  <p id="all">All System Settings</p>
+
+  <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button class="search_icon" onclick="search()">
+          <div class="search_icon"><i class="fa fa-search"></i></div>
+      </button>
+
+      <div class="bell"><i class="fa fa-bell fa-2xl"></i></div>
+
+      <div class="rectangle-box">
+          <img class="me" src="../../../assets/hr_setting_img/Ashutoshsinghphoto.jpg .jpg" alt="">
+          <h1 class="name">Ashutosh Singh</h1>
+          <p id="namep">HR Manager</p>
+
+
+      </div>
+
+      <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-angle-down fa-l"></i></button>
+          <div class="dropdown-content">
+              <a><i class="fa fa-user"></i> My Profile</a>
+              <a class="logout"><i class="fa fa-times"></i> Logout</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="update">
+  <button class="save">Save change</button>
+  <button class="cancel">cancel</button>
+</div>
+
+
+
+
 <div class="row">
     <div class="col-2">
-        <a routerLink="/hr/setting/">Personal Info
-        </a>
-        <br>
-        <a routerLink="/hr/settings/security">Security</a>
+        <button class="person_button"><a routerLink="/hr/settings"><i class="fa fa-exclamation-triangle"></i> Personal Info</a></button>
+        <br> 
+       <button class="security_button"><a routerLink="/hr/settings/security"><i class="fa fa-lock fa-l"></i> Security</a></button>
     </div>
     <div class="col-10">
       <router-outlet></router-outlet>
     </div>
 </div>
+

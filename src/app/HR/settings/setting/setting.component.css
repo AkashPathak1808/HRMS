@@ -153,6 +153,31 @@ input[type="text"] {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .line{
     margin: 1rem 0;
     color: inherit;
@@ -432,8 +457,8 @@ line-height: 22px; /* 129.412% */
 .vl {
     border-left: 0.5px solid rgb(0, 0, 0);
     height: 720px;
-    margin-left: 25%;
-    margin-top: -15%;
+    margin-left: 8%;
+    margin-top: -10%;
   }
 .gen_info{
     color: #000;
@@ -443,8 +468,8 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 91.667% */
-margin-top: -62%;
-margin-left:-15% ;
+margin-top: -87%;
+margin-left:-45% ;
 }
 .gen_p{
     color: rgba(0, 0, 0, 0.80);
@@ -454,10 +479,10 @@ font-size: 13px;
 font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 169.231% */
-margin-left:-13% ;
+margin-left:43% ;
 }
 hr{
-    margin-left: 30%;
+    margin-left: 45%;
 }
 
 
@@ -469,7 +494,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 137.5% */
-margin-left: -30%;
+margin-left: 20%;
 
 }
 .profile_img{
@@ -478,7 +503,7 @@ height: 64px;
 flex-shrink: 0;
 border-radius: 32px;
 background: lightgray 50% / cover no-repeat;
-margin-left: 30%;
+margin-left: 50%;
 margin-top: 1%;
 }
 
@@ -490,8 +515,8 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 157.143% */
-margin-top: -6%;
-    margin-left: -17%;
+margin-top: -8%;
+    margin-left: 35%;
 
 }
 .profile_role{
@@ -503,7 +528,7 @@ margin-top: -6%;
     font-style: normal;
     font-weight: 300;
     line-height: 24px; /* 150% */
-    margin-left: 38%;
+    margin-left: 62%;
 }
 .profile_location{
     color: var(--Gray-500, #A2A1A8);
@@ -514,11 +539,11 @@ margin-top: -6%;
     font-style: normal;
     font-weight: 300;
     line-height: 24px; /* 150% */
-    margin-left: 38%;
+    margin-left: 62%;
 }
 .change_in_profile{
     gap: 16px;
-    margin-left: 50%;
+    margin-left: 90%;
     margin-top: -5%;
     display: flex;
     gap:25px;
@@ -555,35 +580,35 @@ background-color: white;
 }
 
 .User{
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: 5%;
 }
 .Email{
-    margin-left: 60%;
-    margin-top: -68px;
+    margin-left: 100%;
+    margin-top: -72px;
 }
 .Phone{
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: 3%;
 }
 .Fax{
-    margin-left: 60%;
+    margin-left: 100%;
     margin-top: -68px;
 }
 .Address{
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: 3%;
 }
 .Country{
-    margin-left: 60%;
+    margin-left: 100%;
     margin-top: -68px;
 }
 .City{
-    margin-left: 30%;
+    margin-left: 50%;
     margin-top: 3%;
 }
 .State{
-    margin-left: 60%;
+    margin-left: 100%;
     margin-top: -68px;
 }
 
