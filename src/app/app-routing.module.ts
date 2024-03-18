@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule, ViewChildren } from '@angular/core';
+import { ChildrenOutletContexts, RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './HR/dashboard/dashboard.component';
 import { EmployeeComponent } from './HR/employee/employee.component';
 import { ClientComponent } from './HR/client/client.component';
@@ -29,7 +29,10 @@ const routes: Routes = [
   {path: 'hr/settings',component: SettingsNavbarComponent, 
    children : [
     {path: '', component: SettingComponent},
-    {path: "security", component: SettingSecurityComponent}]},
+    {path: "security", component: SettingSecurityComponent}
+  ]},
+
+    
   {path: 'hr/tasks', component: TaskComponent},
   {path: 'hr/candidates', component: CandidatesComponent},
   {path: 'hr/payrolls', component: PayrollComponent},

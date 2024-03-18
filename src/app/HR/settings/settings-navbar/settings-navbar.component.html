@@ -21,28 +21,60 @@
       <div class="dropdown">
           <button class="dropbtn"><i class="fa fa-angle-down fa-l"></i></button>
           <div class="dropdown-content">
-              <a><i class="fa fa-user"></i> My Profile</a>
-              <a class="logout"><i class="fa fa-times"></i> Logout</a>
+              <button class="my_profile_b"><a class="my_profile"><i class="fa fa-user"></i> My Profile</a></button>
+              <button class="my_logout"><a class="logout"><i class="fa fa-times"></i> Logout</a></button>
           </div>
       </div>
   </div>
 </div>
 <div class="update">
-  <button class="save">Save change</button>
+    <!-- Button trigger modal -->
+<button type="button" class="save" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Save change
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="save">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <button class="save">Save change</button> -->
   <button class="cancel">cancel</button>
 </div>
 
 
 
 
+
+
+
+
+  
+
 <div class="row">
     <div class="col-2">
-        <button class="person_button"><a routerLink="/hr/settings"><i class="fa fa-exclamation-triangle"></i> Personal Info</a></button>
+        <button routerLink="/hr/settings/" class="person_button"><i class="fa fa-exclamation-triangle"></i> Personal Info</button>
+        <br>
         <br> 
-       <button class="security_button"><a routerLink="/hr/settings/security"><i class="fa fa-lock fa-l"></i> Security</a></button>
+       <button routerLink="/hr/settings/security" class="security_button"><i class="fa fa-lock fa-l"></i> Security</button>
     </div>
     <div class="col-10">
       <router-outlet></router-outlet>
     </div>
 </div>
+
 

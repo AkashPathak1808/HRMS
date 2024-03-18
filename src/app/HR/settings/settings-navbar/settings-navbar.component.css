@@ -15,7 +15,7 @@ a{
     line-height: 22px;
 }
 .row{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 10%;
 }
 
@@ -112,7 +112,7 @@ line-height: 22px;
 .search-container {
     display: flex;
     align-items: center;
-    margin-left: 60%;
+    margin-left: 55%;
     margin-top: -6%;
     background-color: #00000000;
     
@@ -127,17 +127,19 @@ input[type="text"] {
   }
   
 .search_icon {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 2%;
-    margin-left: 0%;
+
+    background-color: #0056b3;
     display: flex;
     width: 50px;
     height: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background:#00000000;
+    border: #00000000;
 }
 
   
@@ -397,16 +399,16 @@ p{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
   }
   .dropdown-content .logout{
     color: red;
   }
 
-
+.f
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-
 
   .dropdown:hover .dropdown-content {
     display: block;
@@ -624,6 +626,7 @@ background-color: white;
     margin-left: 30%;
     margin-top: 5%;
 }
+
 .Email{
     margin-left: 60%;
     margin-top: -68px;
@@ -671,4 +674,75 @@ font-size: 17px;
 font-style: normal;
 font-weight: 500;
 line-height: 22px; 
+}
+
+
+
+
+.passworld_c{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px; /* 137.5% */
+margin-left: -53%;
+margin-top: 5%;
+}
+.passworld_p{
+    color: rgba(0, 0, 0, 0.80);
+text-align: center;
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 169.231% */
+margin-left: -40%;
+margin-top: -4%;
+}
+.change{
+    width: 154px;
+height: 37px;
+flex-shrink: 0;
+border-radius: 7px;
+color: #2175b9ec;
+margin-left: 75%;
+flex-shrink: 0;
+
+}
+.change_p{
+font-family: Inter;
+background-color:#779fc06e;
+border-radius: 5px;
+font-family: Inter;
+font-size: 13.9px;
+font-style: normal;
+
+}
+.change_p:hover{
+    color: #2175b9ec;
+    background-color: #2174b916;
+}
+
+
+.my_profile_b{
+    background-color: #00000000;
+    border: #00000000;
+    width: 240px;
+
+
+}
+.my_logout{
+    background-color: #00000000;
+    border: #00000000;
+    width: 240px;
+}
+.my_profile_b:hover{
+    color: #2175b9ec;
+    background-color: #2174b916;
+}
+.my_logout:hover{
+    color: #2175b9ec;
+    background-color: #2174b916;
 }

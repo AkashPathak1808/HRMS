@@ -30,6 +30,7 @@ import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule,} from '@angular/material/icon';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,8 @@ import {MatIconModule,} from '@angular/material/icon';
     SettingSecurityComponent,
     SettingsNavbarComponent,
     LeaveApprovedComponent,
-    LeavePendingComponent
+    LeavePendingComponent,
+    
   ],
   imports: [
     BrowserModule,
