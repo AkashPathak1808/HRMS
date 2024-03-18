@@ -1,12 +1,6 @@
 <!-- Part-1 -->
 <div id="container-card">Projects</div>
-
 <div class="search-container">
-  <input type="text" placeholder="Search..." />
-  <button onclick="search()">
-    <div class="search_icon"><i class="fa fa-search"></i></div>
-  </button>
-
   <div class="bell"><i class="fa fa-bell fa-2xl"></i></div>
 
   <div class="rectangle-box">
@@ -14,26 +8,39 @@
     <h1 class="name">Shubham Pandey</h1>
     <p id="namep">HR Manager</p>
   </div>
-  <button onclick="search()">
-    <i class="fa fa-angle-down fa-l"></i>
-  </button>
+
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-angle-down fa-l"></i></button>
+    <div class="dropdown-content">
+      <a><i class="fa fa-user"></i> My Profile</a>
+      <a class="logout"><i class="fa fa-times"></i> Logout</a>
+    </div>
+  </div>
 </div>
+
+<!-- </div> -->
 
 <!-- Part-2 -->
 <div class="card-box">
   <div class="container text-center">
-    <div class="row align-items-center">
+    <div class="row align-items-center roww">
       <img [src]="img1" alt="Logo 1" class="logo" />
 
       <div class="col">
-        <p>Members <br> <span id="activeMembers">0</span></p>
+        <p>
+          Members <br />
+          <span id="activeMembers">0</span>
+        </p>
         <p><span id="activeMembersThisMonth"> </span> % this month</p>
       </div>
 
       <img [src]="img1" alt="Logo 1" class="logo" />
 
       <div class="col">
-        <p>Members <br> <span id="activeMembers">0</span></p>
+        <p>
+          Members <br />
+          <span id="activeMembers">0</span>
+        </p>
         <p><span id="activeMembersThisMonth"> </span> % this month</p>
       </div>
 
@@ -51,9 +58,93 @@
   <!-- ----------------Table part------------------ -->
 
   <div class="container-table">
-    <div class="container-card">
-      <h2 class="head">All Customers</h2>
-      <h5 class="active-customers">Active Members</h5>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="head">All Customers</h2>
+          <h5 class="active-customers">Active Members</h5>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="card-row row">
+            <div class="col-8 col-sm-6 search-card">
+              <input type="text" placeholder="Search..." />
+              <button onclick="search()">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <div class="col-4 col-sm-6">
+              <label for="sort">Sort by:</label>
+              <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <table class="w-full border-4">
+        <thead>
+          <tr>
+            <th class="p-3 text-left bg-gray-200">S.No</th>
+            <th class="p-3 text-left bg-gray-200">Customer Name</th>
+            <th class="p-3 text-left bg-gray-200">Company</th>
+            <th class="p-3 text-left bg-gray-200">Phone No</th>
+            <th class="p-3 text-left bg-gray-200">E-mail</th>
+            <th class="p-3 text-left bg-gray-200">Country</th>
+            <th class="p-3 text-left bg-gray-200">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="border-2"
+            *ngFor="let supplier of visibleData(); let i = index"
+          >
+            <td class="p-3 border-2">{{ i + 1 }}</td>
+            <td class="p-3 border-2">{{ supplier.customerName }}</td>
+            <td class="p-3 border-2">{{ supplier.company }}</td>
+            <td class="p-3 border-2">{{ supplier.phoneno }}</td>
+            <td class="p-3 border-2">{{ supplier.email }}</td>
+            <td class="p-3 border-2">{{ supplier.country }}</td>
+            <td class="p-3 border-2">{{ supplier.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mt-4 flex item-center justify-center">
+        <button
+          class="text-cyan-500 border-4 py-2 px-4 rounded-1-1g cursor-pointer mr-5"
+          (click)="previousPage()"
+        >
+          Previous
+        </button>
+  
+        <button
+          *ngFor="let pageNumber of pageNumbers(); let i = index"
+          class="py-2 px-4 rounded-1-1g cursor-pointer bg-cyan-500 text-white"
+          [class.bg-cyan-500]="i + 1 == currentPage"
+          [class.text-white]="i + 1 == currentPage"
+          (click)="changepage(i + 1)"
+        >
+          {{ i + 1 }}
+        </button>
+  
+        <!-- <button
+          class="py-2 px-4 cursor-pointer bg-cyan-500 text-white"
+        >
+          1
+        </button> -->
+  
+        <button
+          class="text-cyan-500 border-4 py-2 px-4 cursor-pointer rounded-r-1g m1-5"
+          (click)="nextPage()"
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>
 </div>
