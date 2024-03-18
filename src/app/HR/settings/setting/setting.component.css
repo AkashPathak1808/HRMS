@@ -457,7 +457,7 @@ line-height: 22px; /* 129.412% */
 .vl {
     border-left: 0.5px solid rgb(0, 0, 0);
     height: 720px;
-    margin-left: 8%;
+    margin-left: 6%;
     margin-top: -10%;
   }
 .gen_info{
@@ -468,7 +468,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 91.667% */
-margin-top: -87%;
+margin-top: -85%;
 margin-left:-45% ;
 }
 .gen_p{
@@ -479,10 +479,11 @@ font-size: 13px;
 font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 169.231% */
-margin-left:43% ;
+margin-left:-42% ;
 }
 hr{
-    margin-left: 45%;
+    margin-left: 13%;
+
 }
 
 
@@ -494,7 +495,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 137.5% */
-margin-left: 20%;
+margin-left: -50%;
 
 }
 .profile_img{
@@ -503,7 +504,7 @@ height: 64px;
 flex-shrink: 0;
 border-radius: 32px;
 background: lightgray 50% / cover no-repeat;
-margin-left: 50%;
+margin-left: 18%;
 margin-top: 1%;
 }
 
@@ -516,7 +517,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 157.143% */
 margin-top: -8%;
-    margin-left: 35%;
+    margin-left: -35%;
 
 }
 .profile_role{
@@ -528,7 +529,7 @@ margin-top: -8%;
     font-style: normal;
     font-weight: 300;
     line-height: 24px; /* 150% */
-    margin-left: 62%;
+    margin-left: 28%;
 }
 .profile_location{
     color: var(--Gray-500, #A2A1A8);
@@ -539,11 +540,11 @@ margin-top: -8%;
     font-style: normal;
     font-weight: 300;
     line-height: 24px; /* 150% */
-    margin-left: 62%;
+    margin-left: 28%;
 }
 .change_in_profile{
     gap: 16px;
-    margin-left: 90%;
+    margin-left: 50%;
     margin-top: -5%;
     display: flex;
     gap:25px;
@@ -580,35 +581,35 @@ background-color: white;
 }
 
 .User{
-    margin-left: 50%;
+    margin-left: 20%;
     margin-top: 5%;
 }
 .Email{
-    margin-left: 100%;
+    margin-left: 60%;
     margin-top: -72px;
 }
 .Phone{
-    margin-left: 50%;
+    margin-left: 20%;
     margin-top: 3%;
 }
 .Fax{
-    margin-left: 100%;
+    margin-left: 60%;
     margin-top: -68px;
 }
 .Address{
-    margin-left: 50%;
+    margin-left: 20%;
     margin-top: 3%;
 }
 .Country{
-    margin-left: 100%;
+    margin-left: 60%;
     margin-top: -68px;
 }
 .City{
-    margin-left: 50%;
+    margin-left: 20%;
     margin-top: 3%;
 }
 .State{
-    margin-left: 100%;
+    margin-left: 60%;
     margin-top: -68px;
 }
 

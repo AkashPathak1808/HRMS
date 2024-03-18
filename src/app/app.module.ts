@@ -32,6 +32,7 @@ import {MatIconModule,} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import {MatTableModule} from '@angular/material/table';
     SettingSecurityComponent,
     SettingsNavbarComponent,
     LeaveApprovedComponent,
-    LeavePendingComponent
+    LeavePendingComponent,
+    
   ],
   imports: [
     BrowserModule,
