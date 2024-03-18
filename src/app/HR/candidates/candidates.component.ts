@@ -7,4 +7,71 @@ import { Component } from '@angular/core';
 })
 export class CandidatesComponent {
 
+  resumeImg = "assets/CandidateImg/res.webp"
+
+  candidates = [
+    {
+      candidateName: "Akash Pathak",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'akash@gmail.com',
+      mobile: '7477000723',
+      status: 'Selected'
+    },
+    {
+      candidateName: "Pankaj Sahu",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'pankaj@gmail.com',
+      mobile: '7477000723',
+      status: 'Nonselected'
+    },
+    {
+      candidateName: "Akash Pathak",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'akash@gmail.com',
+      mobile: '7477000723',
+      status: 'Selected'
+    },
+    {
+      candidateName: "Pankaj Sahu",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'pankaj@gmail.com',
+      mobile: '7477000723',
+      status: 'non selected'
+    }, 
+    {
+      candidateName: "Akash Pathak",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'akash@gmail.com',
+      mobile: '7477000723',
+      status: 'selected'
+    },
+    {
+      candidateName: "Pankaj Sahu",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'pankaj@gmail.com',
+      mobile: '7477000723',
+      status: 'non selected'
+    }, {
+      candidateName: "Akash Pathak",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'akash@gmail.com',
+      mobile: '7477000723',
+      status: 'selected'
+    },
+    {
+      candidateName: "Pankaj Sahu",
+      appliedFor: 'Developer',
+      appliedDate: 'July 14, 2023',
+      email: 'pankaj@gmail.com',
+      mobile: '7477000723',
+      status: 'non selected'
+    },
+  ]
 }

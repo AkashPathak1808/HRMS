@@ -1,1 +1,64 @@
-<p>candidates works!</p>
+<section class="candidate">
+    <section class="container topSection">
+        <div class="row">
+            <div class="col-6 headCandi">
+                <h3>Candidates</h3>
+                <p>Show All Candidates</p>
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </section>
+    <section class="container secondSection">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Candidate Name</th>
+                        <th>Applied For</th>
+                        <th>Applied Date</th>
+                        <th>Email Address</th>
+                        <th>Mobile Number</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of candidates">
+                        <td>{{c.candidateName}}</td>
+                        <td>{{c.appliedFor}}</td>
+                        <td>{{c.appliedDate}}</td>
+                        <td>{{c.email}}</td>
+                        <td>{{c.mobile}}</td>
+                        <td class="status"><span
+                                [ngStyle]="{'background-color': ((c.status.toLowerCase())=='selected') ? 'rgba(63, 194, 138, 0.1)' : 'rgba(244, 91, 105, 0.1)'}">{{c.status}}</span>
+                        </td>
+                        <td class="text-center eyeButton">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                    class="fa fa-eye"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img [src]="resumeImg" alt="" class="resumeImg">
+                </div>
+                <div class="footer text-center">
+                    <button type="button" class="btn btn-sm btn-primary p-1 m-1">Select</button>
+                    <button type="button" class="btn btn-sm btn-danger p-1 m-1">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

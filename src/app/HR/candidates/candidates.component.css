@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+.candidate {
+    margin: 2%;
+}
+
+.headCandi h3 {
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.headCandi p {
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+th {
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(162, 161, 168, 1);
+    padding: 2% 0;
+    border: 0;
+}
+
+td {
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 2% 0;
+    border: 0;
+}
+
+.status span {
+    padding: 5%
+}
+
+.footer {
+   padding: 2%;
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.footer button {
+    padding: 2%;
+}
+
+.resumeImg {
+    width: 100%;
+}
+
+.eyeButton button{
+    border: 0px;
+    background-color: white;
+}
