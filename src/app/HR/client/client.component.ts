@@ -15,9 +15,6 @@ interface Supplier {
 })
 export class ClientComponent {
 
-  // title="demo";
-  // displayedColumn :String[] = ['position'] 
-
   img1="assets/client-page/TotalMembers.svg";
   img2="assets/client-page/Members.svg";
   img3="assets/client-page/ActiveMember.svg";
@@ -78,19 +75,15 @@ export class ClientComponent {
   visibleData(){
     let startIndex = (this.currentPage -1) * this.pageSize ;
     let endIndex = startIndex + this.pageSize;
-    // console.log('start Index', startIndex);
     return (this.suppliers.slice(startIndex, endIndex))
   }  
 
   nextPage(){
-    // this.currentPage = this.currentPage + 1;
-    // console.log('Current Page',this.currentPage);
     this.currentPage++;
     this.visibleData();
   }
 
   previousPage(){
-    // this.currentPage = this.currentPage - 1;
     this.currentPage--;
     this.visibleData();
   }
@@ -99,10 +92,6 @@ export class ClientComponent {
     let totalPages = this.suppliers.length / this.pageSize;
     let pageNumArray = new Array(totalPages);
     return pageNumArray;
-    // console.log(pageNumArray);
-    // let totalPages = this.suppliers.length / this.pageSize;
-    // let pageNumArray = new Array(totalPages);
-    // return pageNumArray;
   }
 
   changepage(pageNumber:number){
