@@ -29,6 +29,8 @@ import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approve
 import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule,} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
@@ -64,7 +66,7 @@ import {MatIconModule,} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatIconModule,
-    
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
