@@ -30,6 +30,9 @@ import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule,} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -66,7 +69,11 @@ import {MatTableModule} from '@angular/material/table';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatIconModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
