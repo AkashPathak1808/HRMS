@@ -20,6 +20,12 @@
     letter-spacing: 0em;
 }
 
+.secondSection{
+    border: 1px solid rgba(162, 161, 168, 0.2);
+    padding: 3%;
+    border-radius: 10px;
+}
+
 th {
     font-family: Lexend;
     font-size: 16px;
@@ -65,4 +71,10 @@ td {
 
 .w100 {
     width: 100%;
+}
+
+.bell i{
+    background-color: rgba(162, 161, 168, 0.1);
+    padding: 2%;
+    border-radius: 10px;
 }

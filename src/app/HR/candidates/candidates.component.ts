@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CandidatesComponent {
 
-  resumeImg = "assets/CandidateImg/res.webp"
+  user = "assets/CandidateImg/user.png"
 
   candidates = [
     {
@@ -16,7 +16,8 @@ export class CandidatesComponent {
       appliedDate: 'July 14, 2023',
       email: 'akash@gmail.com',
       mobile: '7477000723',
-      status: 'Selected',      
+      status: 'Selected',
+      resumeImg: "assets/CandidateImg/resumeimg.jpg"
     },
     {
       candidateName: "Pankaj Sahu",
@@ -65,6 +66,7 @@ export class CandidatesComponent {
       email: 'akash@gmail.com',
       mobile: '7477000723',
       status: 'selected',
+      resumeImg: "assets/CandidateImg/resumeimg.jpg"
     },
     {
       candidateName: "Pankaj Sahu",
@@ -75,4 +77,5 @@ export class CandidatesComponent {
       status: 'non selected'
     },
   ]
+
 }

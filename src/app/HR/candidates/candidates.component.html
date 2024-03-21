@@ -11,6 +11,13 @@
         </div>
     </section>
     <section class="container secondSection">
+        <div class="searchBar">
+            <mat-form-field appearance="outline">
+                <mat-label>Search Candidates</mat-label>
+                <input matInput>
+                <mat-icon matPrefix>search</mat-icon>
+            </mat-form-field>
+        </div>
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -35,13 +42,13 @@
                                 [ngStyle]="{'background-color': ((c.status.toLowerCase())=='selected') ? 'rgba(63, 194, 138, 0.1)' : 'rgba(244, 91, 105, 0.1)'}">{{c.status}}</span>
                         </td>
                         <td class="text-center eyeButton">
-                            <button data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            <button data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + i"><i
                                     class="fa fa-eye"></i></button>
                         </td>
 
                         <!-- Modal for pdf -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade" [id]="'exampleModal' + i" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -53,15 +60,18 @@
                                     </div>
                                     <div class="footer text-center">
                                         <button type="button" class="btn btn-sm btn-primary p-1 m-1"
-                                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Select</button>
-                                        <button type="button" class="btn btn-sm btn-danger p-1 m-1">Reject</button>
+                                            [attr.data-bs-target]="'#exampleModalToggle' + i"
+                                            data-bs-toggle="modal">Select</button>
+                                        <button type="button" class="btn btn-sm btn-danger p-1 m-1"
+                                            [attr.data-bs-target]="'#exampleModalToggle2' + i"
+                                            data-bs-toggle="modal">Reject</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- modal for mail -->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        <div class="modal fade" [id]="'exampleModalToggle' + i" aria-hidden="true"
                             aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -80,7 +90,7 @@
                                             </div>
 
                                             <div class="text-center">
-                                                <button type="submit" class="btn btn-primary btn-sm">Add</button>
+                                                <button type="submit" class="btn btn-primary btn-sm">Send Mail</button>
                                             </div>
                                         </form>
                                     </div>
