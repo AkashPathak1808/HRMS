@@ -62,7 +62,7 @@ import { MatCardModule } from '@angular/material/card';
     SettingSecurityComponent,
     SettingsNavbarComponent,
     LeaveApprovedComponent,
-    LeavePendingComponent,
+    LeavePendingComponent
     
   ],
   imports: [

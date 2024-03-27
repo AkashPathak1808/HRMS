@@ -15,28 +15,32 @@ import { LeaveApprovedComponent } from './HR/leaves/leave-approved/leave-approve
 import { CandidatesComponent } from './HR/candidates/candidates.component';
 import { PayrollComponent } from './HR/payroll/payroll.component';
 import { HolidaysComponent } from './HR/holidays/holidays.component';
+import { LeavePendingComponent } from './HR/leaves/leave-pending/leave-pending.component';
 
 const routes: Routes = [
 
-  {path: 'hr', component: DashboardComponent},
-  {path: 'hr/attendance', component: AttendanceComponent},
-  {path: 'hr/clients', component: ClientComponent},
-  {path: 'hr/employees', component: EmployeeComponent},
-  {path: 'hr/jobs', component: JobsComponent},
-  {path: 'hr/leaves', component: LeaveApprovedComponent},
-  {path: 'hr/managements', component: ManagementComponent},
-  {path: 'hr/projects', component: ProjectComponent},
-  {path: 'hr/settings',component: SettingsNavbarComponent, 
-   children : [
-    {path: '', component: SettingComponent},
-    {path: "security", component: SettingSecurityComponent}
-  ]},
+  { path: 'hr', component: DashboardComponent },
+  { path: 'hr/attendance', component: AttendanceComponent },
+  { path: 'hr/clients', component: ClientComponent },
+  { path: 'hr/employees', component: EmployeeComponent },
+  { path: 'hr/jobs', component: JobsComponent },
+  { path: 'hr/leaves', component: LeaveApprovedComponent },
+  { path: 'hr/leave-pending', component: LeavePendingComponent },
+  { path: 'hr/managements', component: ManagementComponent },
+  { path: 'hr/projects', component: ProjectComponent },
+  {
+    path: 'hr/settings', component: SettingsNavbarComponent,
+    children: [
+      { path: '', component: SettingComponent },
+      { path: "security", component: SettingSecurityComponent }
+    ]
+  },
 
-    
-  {path: 'hr/tasks', component: TaskComponent},
-  {path: 'hr/candidates', component: CandidatesComponent},
-  {path: 'hr/payrolls', component: PayrollComponent},
-  {path: 'hr/holidays', component: HolidaysComponent},  
+
+  { path: 'hr/tasks', component: TaskComponent },
+  { path: 'hr/candidates', component: CandidatesComponent },
+  { path: 'hr/payrolls', component: PayrollComponent },
+  { path: 'hr/holidays', component: HolidaysComponent },
 ];
 
 @NgModule({
