@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+.candidate {
+    margin: 2% 0;
+    /* width: 110%;   */
+}
+
+.notification {
+    margin: 2% 2% 5% 2%;
+    padding: 2% 2% 0 2%;
+    border-radius: 10px;
+    background: rgba(162, 161, 168, 0.10);
+}
+
+.userImg {
+    height: 50px;
+    width: 50px;
+}
+
+.userText b {
+    color: #16151C;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 5%;
+}
+
+.userText p {
+    color: #A2A1A8;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 0 5%;
+}
+
+.profile a {
+    color: #16151C;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.logout a {
+    color: #F45B69;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.headCandi h3 {
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.headCandi p {
+    color: #A2A1A8;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.secondSection {
+    border: 1px solid rgba(162, 161, 168, 0.2);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.addJobBtn button {
+    font-size: 20px;
+    height: 50px;
+}
+
+.btCol {
+    background: #7152F3;
+    color: white;
+    font-size: 12px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(63, 194, 138, 1);
+}
+
+.dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(244, 91, 105, 1);
+}
+
+.d-flex h6 {
+    margin: -5px 1%;
+}
+
+.card {
+    border-radius: 10px;
+    background: var(--gray-gray-5, rgba(162, 161, 168, 0.05));
+    border: 0px;
+}
+
+.briefImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background: rgba(162, 161, 168, 0.05);
+}
+
+.jobTitle h5 {
+    color: #16151C;
+    font-family: Lexend;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.jobTitle p {
+    color: #A2A1A8;
+    font-family: Lexend;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: -10px;
+}
+
+.location {
+    color: var(--Dark-500, #16151C);
+    font-family: Lexend;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.pay {
+    color: var(--Dark-500, #16151C);
+    font-family: Lexend;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}

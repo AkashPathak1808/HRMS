@@ -1,1 +1,116 @@
-<p>jobs works!</p>
+<section class="candidate">
+    <section class="container topSection">
+        <div class="row">
+            <div class="col-6 headCandi">
+                <h3>Jobs</h3>
+                <p>Show All Jobs</p>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="row">
+                            <div class="col-3">
+                                <img [src]="user" alt="" class="userImg">
+                            </div>
+                            <div class="col-9 text-start userText">
+                                <b>Akash Pathak</b>
+                                <p>Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="profile"><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li class="logout"><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container secondSection">
+        <div class="row fSection">
+            <div class="col searchBar">
+                <mat-form-field appearance="outline">
+                    <mat-label>Search Candidates</mat-label>
+                    <input matInput>
+                    <mat-icon matPrefix>search</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col addJobBtn d-flex flex-row-reverse">
+                <button class="btn btCol"> Add New Job</button>
+            </div>
+        </div>
+        <div>
+            <div class="activeJobs secondSection">
+                <div class="d-flex my-2">
+                    <div class="dot"></div>
+                    <h6>Active Jobs</h6>
+                </div>
+                <div class="row">
+                    <div class="col" *ngFor="let a of activeJobs">
+                        <div class="card my-2" style="width: 17rem;">
+                            <div class="card-body">
+                                <div class="row mx-1">
+                                    <div class="col-3 briefImg text-center">
+                                        <img [src]="case" alt="" class="mt-2">
+                                    </div>
+                                    <div class="col-9 jobTitle">
+                                        <h5 class="card-title">{{a.title}}</h5>
+                                        <p>{{a.designation}}</p>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btCol m-1">{{a.department}}</button>
+                                    <button class="btn btCol m-1">{{a.time}}</button>
+                                    <button class="btn btCol m-1" *ngIf="a.remote">Remote</button>
+                                </div>
+                                <div class="row thSec mt-3">
+                                    <div class="col location"><i class="fa fa-map-pin"></i> {{a.location}} </div>
+                                    <div class="col text-end pay"><i class="fa fa-solid fa-dollar-sign"></i><b>
+                                            {{a.ctc}}</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inactiveJobs secondSection mt-4">
+                <div class="d-flex my-2">
+                    <div class="dot2"></div>
+                    <h6>Inactive Jobs</h6>
+                </div>
+                <div class="row">
+                    <div class="col" *ngFor="let a of inactiveJobs">
+                        <div class="card my-2" style="width: 17rem;">
+                            <div class="card-body">
+                                <div class="row mx-1">
+                                    <div class="col-3 briefImg text-center">
+                                        <img [src]="case" alt="" class="mt-2">
+                                    </div>
+                                    <div class="col-9 jobTitle">
+                                        <h5 class="card-title">{{a.title}}</h5>
+                                        <p>{{a.designation}}</p>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btCol m-1">{{a.department}}</button>
+                                    <button class="btn btCol m-1">{{a.time}}</button>
+                                    <button class="btn btCol m-1" *ngIf="a.remote">Remote</button>
+                                </div>
+                                <div class="row thSec mt-3">
+                                    <div class="col location"><i class="fa fa-map-pin"></i> {{a.location}} </div>
+                                    <div class="col text-end pay"><i class="fa fa-solid fa-dollar-sign"></i> <b>
+                                            {{a.ctc}}</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
